@@ -2,11 +2,11 @@
 rm(list=ls())
 
 #set working directory
-setwd("O:/Documents/Theoretical/Compartmental_models/RDvDD/Mathematica_centroid/")
+setwd("")
 
 #read in data
-rd <- read.csv("../../Mathematica_files/RDvDD/Results/RD_results.csv", header = TRUE)
-dd <- read.csv("../../Mathematica_files/RDvDD/Results/DD_results_expanded.csv", header = TRUE)
+rd <- read.csv("RD_results.csv", header = TRUE)
+dd <- read.csv("DD_results.csv", header = TRUE)
 
 #create values for i and j
 i <- 1:nrow(rd)
@@ -284,5 +284,5 @@ rd$iota.min.dist <- iota.min.dist
 rm(euc.dist.rd, euc.dist, min.dist, sigma.min.dist, iota.min.dist)
 
 ####save files as csv####
-write.csv(dd, "./Data/DD_centroid_r0_het_fixed.csv", row.names = FALSE)
-write.csv(rd, "./Data/RD_centroid_r0_het.csv", row.names = FALSE)
+write.csv(dd, "DD_r0_het.csv", row.names = FALSE)
+write.csv(rd, "RD_r0_het.csv", row.names = FALSE)

@@ -1,5 +1,3 @@
-This folder contains all of the data and code necessary to undertake the analysis presented the SI from https://doi.org/10.1101/2024.09.16.613211.
-
 isometric_parameter_data.csv contains the sigma and iota values for the three groups necessary for the isometric tripartite heterogeneiety analyses. DD_solutions_isometric.nb and RD_solutions_isometric.nb are the files which then run the models using those sigma and iota values. r0_het_calc_isometric.R then takes the results from the models and calculates R0 and heterogeneity for each of the results.
 
 non_isometric_parameter_data.csv contains the sigma and iota values for the three groups necessary for the non-isometric tripartite heterogeneiety analyses. DD_solutions_non_isometric.nb and RD_solutions_non_isometric.nb are the files which then run the models using those sigma and iota values. r0_het_calc_non_isometric.R then takes the results from the models and calculates R0 and heterogeneity for each of the results.
